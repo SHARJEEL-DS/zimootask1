@@ -2,6 +2,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import React, { useRef, useState } from "react";
+import Image from "next/image";
 
 const Category = () => {
   const sliderRef = useRef(null);
@@ -50,17 +51,19 @@ const Category = () => {
         </div>
         <div className="mt-2">
           <button onClick={handlePrevious}>
-            <img
+            <Image
               className="w-[20px] sm:w-[15px] sm:h-[30px] sm:mr-[20px] mr-[60px] h-[40px]"
-              src="../assistes/left.png"
-              alt=""
+              src="/assistes/left.png"
+              alt="io"
+              width={100} height={100}
             />
           </button>
           <button onClick={handleNext}>
-            <img
+            <Image
               className="w-[20px] sm:w-[15px] sm:h-[30px] h-[40px]"
-              src="../assistes/right.png"
-              alt=""
+              src="/assistes/right.png"
+              alt="etyu"
+              width={100} height={100}
             />
           </button>
         </div>
@@ -68,28 +71,28 @@ const Category = () => {
 
       <Slider className="mt-[90px] sm:mt-[30px] " {...settings} ref={sliderRef}>
         <div>
-          <img className=" px-3" src="/assistes/Rectangle-1.png" alt="" />
+          <Image className="px-3 " src="/assistes/Rectangle-1.png" alt="" width={300} height={300}/>
         </div>
         <div>
-          <img className=" px-3" src="/assistes/Rectangle-2.png" alt="" />
+          <Image className="px-3 " src="/assistes/Rectangle-2.png" alt="z"  width={300} height={300} />
         </div>
         <div>
-          <img className=" px-3" src="/assistes/Rectangle-3.png" alt="" />
+          <Image className="px-3 " src="/assistes/Rectangle-3.png" alt="za"  width={300} height={300}/>
         </div>
         <div>
-          <img className=" px-3" src="/assistes/Rectangle-4.png" alt="" />
+          <Image className="px-3 " src="/assistes/Rectangle-4.png" alt="jhk"  width={300} height={300} />
         </div>
         <div>
-          <img className=" px-3" src="/assistes/Rectangle-5.png" alt="" />
+          <Image className="px-3 " src="/assistes/Rectangle-5.png" alt="kjkl"  width={300} height={300} />
         </div>
         <div>
-          <img className=" px-3" src="/assistes/Rectangle-6.png" alt="" />
+          <Image className="px-3 " src="/assistes/Rectangle-6.png" alt="nhu"  width={300} height={300} />
         </div>
         <div>
-          <img className=" px-3" src="/assistes/Rectangle-7.png" alt="" />
+          <Image className="px-3 " src="/assistes/Rectangle-7.png" alt="mki"  width={300} height={300}/>
         </div>
         <div>
-          <img className=" px-3" src="/assistes/Rectangle-8.png" alt="" />
+          <Image className="px-3 " src="/assistes/Rectangle-8.png" alt="juyy"  width={300} height={300}/>
         </div>
       </Slider>
       <div className=" text-center sm:text-left sm:mt-[30px] mt-[90px] ">

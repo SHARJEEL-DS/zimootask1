@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import ReactCountryFlag from "react-country-flag";
 import { Parallax } from "react-parallax";
@@ -58,7 +59,7 @@ const Hero = () => {
 
   return (
     <>
-    <div className="  hero bg-local bg-center bg-no-repeat bg-cover">
+    <div className="bg-local bg-center bg-no-repeat bg-cover hero">
 
       <div
         className=" flex  flex-col justify-between  md:px-[30px]      h-screen  
@@ -69,25 +70,28 @@ const Hero = () => {
        pt-[2%]"
         >
           <div className="flex ">
-            <img
+            <Image
               className="  lg:w-[65.96px] w-[25px] mr-[39px] sm:mr-2 h-[20px] lg:h-[50px]  "
               src="/assistes/1.png"
               alt="asd"
+              width={100} height={100}
             />
-            <img
+            <Image
               className=" sm:hidden  lg:w-[184.9px] w-[25px] h-[20px] lg:h-[50px]  lg:mr-[39px] mr-3  "
               src="/assistes/3.png"
               alt="asd"
+              width={100} height={100}
             />
             <p className=" text-white uppercase sm:mt-1   mt-[25px] text-xs tracking-[2px] ">
               about
             </p>
           </div>
           <div className="flex justify-center ">
-            <img
+            <Image
               className="  lg:w-[204.38px]  w-[100px] h-[auto]  "
               src="/assistes/2.png"
               alt="asd"
+              width={100} height={100}
             />
           </div>
           <div className="flex justify-end mt-0 ">
@@ -112,26 +116,29 @@ const Hero = () => {
                 title={countryCode}
               />
 
-              <img
+              <Image
                 src="/assistes/6.png"
                 className="w-[20.89px] h-[25px] mx-3 sm:mx-0 sm:ml-3 ml-[40px]"
                 alt="sad"
+                width={100} height={100}
               />
 
-              <img
+              <Image
                 src="/assistes/5.png"
-                className="w-[20.89px] h-[25px] ml-3 sm:ml-3 ml-[40px]"
+                className="w-[20.89px] h-[25px]  sm:ml-3 ml-[40px]"
                 alt="asdasd"
+                width={100} height={100}
               />
             </div>
           </div>
           <div className=" mt-[30px]  text-white flex">
             <button className="flex text-white" >
 
-            <img
+            <Image
               src="/assistes/back.png"
               className=" w-[22px] mt-2 sm:mt-1 mr-2  h-[16px] "
               alt="asdas"
+              width={100} height={100}
               />
             <p className=" uppercase sm:text-[17px] text-[22px] tracking-[4px] ">
               back
@@ -161,10 +168,11 @@ const Hero = () => {
           </p>
           
           <a className="justify-self-center" href="#realState">
-            <img
+            <Image
               src="/assistes/down.png"
               className="  w-[40px] mb-5  "
               alt=""
+              width={100} height={100}
             />
           </a>
         </div>

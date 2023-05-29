@@ -1,3 +1,4 @@
+import Image from "next/image";
 
 
 const RealState = () => {
@@ -15,17 +16,18 @@ const RealState = () => {
         <p className=" sm:text-[22px] text-[44px] ">entries - sellers</p>
         <p className="text-[58px] tracking-[4px] sm:text-[25px] ">worldwide</p>
       </div>
-      <div data-aos="fade-down-right" className=" flex flex-col  items-end sm:items-start ">
-        <img
+      <div data-aos="fade-down-right" className="flex flex-col items-end sm:items-start">
+        <Image
           className="w-[589.6px]  sm:w-[180px] "
           src="/assistes/2.2.png"
-          alt="asd"
+          alt="zimo"
+          width={100} height={100}
         />
         <p className=" mt-[30px]  text-[20px] text-center leading-[32px] sm:leading-[20px] sm:text-[12px] tracking-[4px] sm:mt-[20px] sm:text-left">
           connecting user form across the gloab
-          <br className=" flex sm:hidden" />
+          <br className="flex sm:hidden" />
            to facilitate lifes most important
-          <br className=" flex sm:hidden" />
+          <br className="flex sm:hidden" />
            personal transaction
         </p>
       </div>
@@ -42,13 +44,14 @@ const RealState = () => {
         </div>
         <div></div>
       </div>
-      <div  className=" grid pb-4    grid-cols-1  ">
+      <div  className="grid grid-cols-1 pb-4 ">
 
         <a  href="#category" className="justify-self-center">
-          <img
+          <Image
             src="/assistes/downb.png"
             className="  w-[40px]  "
             alt=""
+            width={100} height={100}
           />
         </a>
       </div>
