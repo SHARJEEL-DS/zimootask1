@@ -58,7 +58,7 @@ const Hero = () => {
 
   return (
     <>
-    <div className="bg-local bg-center bg-no-repeat bg-cover ">
+    <div className='bg-[url("/assistes/bg.png")]  bg-local bg-center bg-no-repeat bg-cover '>
 
       <div
         className=" flex  flex-col justify-between  md:px-[30px]      h-screen  
