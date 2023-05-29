@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import ReactCountryFlag from "react-country-flag";
-import { Parallax } from "react-parallax";
 
 const Hero = () => {
   const [currentTime, setCurrentTime] = useState();

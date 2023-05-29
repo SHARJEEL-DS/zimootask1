@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-// import { Parallax } from 'react-parallax'
+
 
 const Personalised  = () => {
   return (
